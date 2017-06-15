@@ -52,6 +52,7 @@ echo 'deb http://ppa.launchpad.net/snwh/pulp/ubuntu zesty main
 apt update
 apt install -y adapta-gtk-theme paper-icon-theme paper-cursor-theme
 apt clean
+#update-alternatives --config x-session-manager
 echo -e 'Installation complete.'
 
 exit 0
