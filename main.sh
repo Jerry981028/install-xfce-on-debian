@@ -2,12 +2,12 @@
 # set -e
 ChangeSource(){
 mv /etc/apt/sources.list /etc/apt/sources.list.old
-echo 'deb http://ftp.cn.debian.org/debian/ testing main contrib non-free
-deb http://security.debian.org/ testing/updates main contrib non-free
-deb http://ftp.cn.debian.org/debian/ testing-updates main contrib non-free
-deb http://ftp.cn.debian.org/debian/ testing-proposed-updates main contrib non-free
-# deb http://ftp.cn.debian.org/debian/ experimental main
-# deb http://ftp.cn.debian.org/debian/ testing-backports main contrib non-free
+echo 'deb http://mirror.tuna.tsinghua.edu.cn/debian/ testing main contrib non-free
+deb http://mirror.tuna.tsinghua.edu.cn/debian-security/ testing/updates main contrib non-free
+deb http://mirror.tuna.tsinghua.edu.cn/debian/ testing-updates main contrib non-free
+deb http://mirror.tuna.tsinghua.edu.cn/debian/ testing-proposed-updates main contrib non-free
+# deb http://mirror.tuna.tsinghua.edu.cn/debian/ experimental main
+# deb http://mirror.tuna.tsinghua.edu.cn/debian/ testing-backports main contrib non-free
 # deb http://repo.debiancn.org/ stretch main experimental' > /etc/apt/sources.list
 }
 
