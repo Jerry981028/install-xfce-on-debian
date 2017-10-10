@@ -45,8 +45,8 @@ touch /etc/apt/trusted.gpg.d/adapta-gtk-theme.gpg /etc/apt/trusted.gpg.d/paper-i
 wget -qO - https://raw.githubusercontent.com/Jerry981028/install-xfce-on-debian/master/keys/adapta-gtk-theme.key |apt-key --keyring /etc/apt/trusted.gpg.d/adapta-gtk-theme.gpg add -
 wget -qO - https://raw.githubusercontent.com/Jerry981028/install-xfce-on-debian/master/keys/paper-icon-theme.key |apt-key --keyring /etc/apt/trusted.gpg.d/paper-icon-theme.gpg add -
 # apt-key del 2D87398A 89993A70 # Use this command to delete the keys imported.
-echo 'deb http://ppa.launchpad.net/tista/adapta/ubuntu zesty main
-#deb-src http://ppa.launchpad.net/tista/adapta/ubuntu zesty main' > /etc/apt/sources.list.d/adapta-gtk-theme.list
+echo 'deb http://ppa.launchpad.net/tista/adapta/ubuntu artful main
+#deb-src http://ppa.launchpad.net/tista/adapta/ubuntu artful main' > /etc/apt/sources.list.d/adapta-gtk-theme.list
 echo 'deb http://ppa.launchpad.net/snwh/pulp/ubuntu zesty main
 #deb-src http://ppa.launchpad.net/snwh/pulp/ubuntu zesty main' > /etc/apt/sources.list.d/paper-icon-theme.list
 apt update
