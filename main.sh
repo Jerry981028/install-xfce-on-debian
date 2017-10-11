@@ -20,7 +20,7 @@ apt full-upgrade -y
 apt clean
 
 # Install daily packages
-apt install -y tmux nano vim screen less git lsof htop build-essential autoconf automake
+apt install -y tmux nano vim screen less git lsof htop bash-completion build-essential autoconf automake
 apt clean
 
 # Install xfce desktop
