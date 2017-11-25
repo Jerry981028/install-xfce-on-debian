@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 # set -e
 ChangeSource(){
+# Use https to ensure security
+apt install apt-transport-https
+#
 mv /etc/apt/sources.list /etc/apt/sources.list.old
 echo 'deb http://mirror.tuna.tsinghua.edu.cn/debian/ testing main contrib non-free
 deb http://mirror.tuna.tsinghua.edu.cn/debian-security/ testing/updates main contrib non-free
