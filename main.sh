@@ -6,16 +6,17 @@ apt install apt-transport-https
 #
 mv /etc/apt/sources.list /etc/apt/sources.list.old
 echo 'deb http://mirror.tuna.tsinghua.edu.cn/debian/ testing main contrib non-free
-deb http://mirror.tuna.tsinghua.edu.cn/debian-security/ testing/updates main contrib non-free
-deb http://mirror.tuna.tsinghua.edu.cn/debian/ testing-updates main contrib non-free
-deb http://mirror.tuna.tsinghua.edu.cn/debian/ testing-proposed-updates main contrib non-free
-# deb http://mirror.tuna.tsinghua.edu.cn/debian/ experimental main
-# deb http://mirror.tuna.tsinghua.edu.cn/debian/ testing-backports main contrib non-free
-# deb http://repo.debiancn.org/ stretch main experimental' > /etc/apt/sources.list
+deb https://mirror.tuna.tsinghua.edu.cn/debian-security/ testing/updates main contrib non-free
+deb https://mirror.tuna.tsinghua.edu.cn/debian/ testing-updates main contrib non-free
+deb https://mirror.tuna.tsinghua.edu.cn/debian/ testing-proposed-updates main contrib non-free
+# deb https://mirror.tuna.tsinghua.edu.cn/debian/ experimental main
+# deb https://mirror.tuna.tsinghua.edu.cn/debian/ testing-backports main contrib non-free
 }
 
 # Uncomment the following line to change your sources.list
 # ChangeSource
+### debiancn https://github.com/debiancn/repo
+
 
 # Preparation
 apt update
