@@ -47,8 +47,8 @@ wget -qO - https://raw.githubusercontent.com/Jerry981028/install-xfce-on-debian/
 # apt-key del 2D87398A 89993A70 # Use this command to delete the keys imported.
 echo 'deb http://ppa.launchpad.net/tista/adapta/ubuntu artful main
 #deb-src http://ppa.launchpad.net/tista/adapta/ubuntu artful main' > /etc/apt/sources.list.d/adapta-gtk-theme.list
-echo 'deb http://ppa.launchpad.net/snwh/pulp/ubuntu zesty main
-#deb-src http://ppa.launchpad.net/snwh/pulp/ubuntu zesty main' > /etc/apt/sources.list.d/paper-icon-theme.list
+echo 'deb http://ppa.launchpad.net/snwh/pulp/ubuntu artful main
+#deb-src http://ppa.launchpad.net/snwh/pulp/ubuntu artful main' > /etc/apt/sources.list.d/paper-icon-theme.list
 apt update
 apt install -y adapta-gtk-theme paper-icon-theme paper-cursor-theme
 apt clean
